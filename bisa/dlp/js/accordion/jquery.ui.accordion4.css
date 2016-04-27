@@ -1,0 +1,105 @@
+/*
+ * jQuery UI Accordion 1.8.11
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-header { cursor: pointer; height: auto; position: relative; margin-top: 0px; zoom: 1; display: block; padding: 18px; background: url("/sites/all/themes/dlp/images/readmore-btn-low.jpg") no-repeat 98% center transparent;}
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; font-size: 14px; line-height: 18px; padding: 14px 0 10px; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 116px; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; display: none;}
+.ui-accordion .ui-accordion-content-active { display: block; }
+.programma .table-acc {
+	padding: 0; margin: 0;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+border: 1px solid #999;
+background: none transparent;
+font-weight: normal;
+color: #212121;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+border: 1px solid #d3d3d3;
+background: none transparent;
+font-weight: normal;
+color: #555;
+}
+.ui-accordion .ui-accordion-content {
+width: auto;
+padding: 0;
+border: 0;
+margin-top: -2px;
+position: relative;
+top: 1px;
+margin-bottom: 2px;
+overflow: auto;
+display: none;
+zoom: 1;
+background: none transparent;
+}
+.doklad {
+float: none;
+width: auto;
+position: relative;
+padding: 12px;
+margin: 20px 0 4px;
+font: normal normal normal 13px/16px Arial, Helvetica, sans-serif;
+color: #222;
+background-color: #fff;
+min-height: 1px;
+overflow: hidden;
+}
+.programma a, .programma a:hover {
+	color: #02a5e2;
+	text-decoration: underline;
+}
+.d_title {
+height: auto;
+}
+.doklad>div {
+height: auto;
+}
+.xdoclad {
+height: auto;
+min-height: 75px;
+}
+.xdoclad>div.d_face {
+float: left;
+padding: 0 4px 12px 0;
+width: 29%;
+}
+.wrapper_doclads {
+background: none transparent;
+}
+.title_stol, .title_plenarka, .title_section1 {
+float: none;
+}
+.title_section1.bg_s1,
+.title_section1.bg_s2,
+.title_section1.bg_s3 {
+background-color: transparent;
+}
+.title_section1.bg_s1 .ui-accordion-header{
+background-color: #ff9b52;
+}
+.title_section1.bg_s2 .ui-accordion-header{
+background-color: #47c455;
+}
+.title_section1.bg_s3 .ui-accordion-header{
+background-color: #823ba3;
+}
+.title_section1.bg_s1 .ui-accordion-header,
+.title_section1.bg_s2 .ui-accordion-header,
+.title_section1.bg_s3 .ui-accordion-header {
+	 moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
