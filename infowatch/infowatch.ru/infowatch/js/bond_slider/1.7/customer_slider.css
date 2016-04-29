@@ -1,0 +1,184 @@
+#slideboxLogo {
+	position:relative;
+	border: none;
+	width:980px;
+	height:100px;
+	/*overflow:hidden;*/ /*knopki_snaruzhi*/
+}
+#slideboxLogo,
+#slideboxLogo .content{
+	width:980px; /*950px*/
+	margin: 0px;  /*0 15px*/
+	padding: 0px;
+	border: none;
+}
+#slideboxLogo, #slideboxLogo .container,
+#slideboxLogo .content{
+	height:100px;
+}
+#slideboxLogo .container {
+	position:relative;
+	left:0;
+}
+#slideboxLogo .content{
+	float:left;
+}
+
+#slideboxLogo .next,
+#slideboxLogo .previous {
+	position:absolute;
+	z-index:2;
+	display:block;
+	background: url(/sites/all/themes/infowatch/js/bond_slider/1.7/images/prev_next_arrows_logos.png) no-repeat left top transparent;
+	width:44px;
+	height:44px;
+	top: 28px;
+	z-index: 3;
+	transition: background-color 0.2s ease-out 0s;
+    -moz-transition: background-color 0.2s ease-out 0s;
+    -o-transition: background-color 0.2s ease-out 0s;
+    -webkit-transition: background-color 0.2s ease-out 0s;
+}
+#slideboxLogo .next{
+	left: 964px; /*950px*/
+	margin-right:0px;
+}
+#slideboxLogo .previous{
+	right: 964px; /*950px*/
+	margin-left: 0px;
+	background-position: -44px 0;
+}
+#slideboxLogo .next:hover,
+#slideboxLogo .previous:hover{
+	cursor: pointer;
+	background-color: rgba(84, 185, 72, 0.4);
+}
+.ie #slideboxLogo .next:hover,
+.ie #slideboxLogo .previous:hover{
+	background-color: #b6deb1;
+}
+
+#slideboxLogo .thumbs{
+	position:absolute;
+	display: block;
+	z-index:2;
+	top: 16px;
+	right: 24px;
+	width: auto;
+	height: 16px;
+}
+/*#slideboxLogo .thumbs .thumb{
+	outline: none;
+	display:block;
+	margin-left: 10px;
+	float:left;
+	width: 14px;
+	height: 14px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #000;
+	text-decoration:none;
+	line-height: 14px;
+}
+#slideboxLogo .thumbs .thumb:hover {
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #000;
+	line-height: 14px;
+	text-decoration: none;
+}
+#slideboxLogo .thumbs .thumb.selected_thumb{
+	outline: none;
+	width: 14px;
+	height: 14px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #000;
+	display:block;
+	margin-left: 12px;
+	float:left;
+	line-height: 14px;
+	text-decoration: none;
+}*/
+.hide_logos_prev,
+.hide_logos_next{
+	background: url(/sites/all/themes/infowatch/js/bond_slider/1.7/images/hide_logos.png) repeat-y left top transparent;
+    height: 100px;
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+}
+.hide_logos_next{
+    right: 0;
+	background-position: right top;
+}
+a.logo{
+display: block;
+float: left;
+outline: none;
+border: none;
+}
+a.logo img{
+border: none;
+}
+a.logo.sber{
+padding: 17px  0 17px 37px;
+}
+a.logo.vtb{
+padding: 23px 0 21px 14px;
+}
+a.logo.gazprom{
+padding: 26px 0 24px 30px;
+}
+a.logo.sukhoi{
+padding: 34px 0 28px 24px;
+}
+a.logo.eon{
+padding: 29px 0 29px 20px;
+}
+a.logo.beeline{
+padding: 21px 0 27px 29px;
+}
+a.logo.primefocus{
+padding: 13px 0 19px 33px;
+}
+a.logo.tvel{
+padding: 25px 0 33px 30px;
+}
+a.logo.nordea{
+padding: 29px 0 35px 16px;
+}
+a.logo.transneft{
+padding: 35px 0 9px 8px;
+}
+a.logo.rusgydro{
+padding: 27px 0 27px 12px;
+}
+a.logo.raiffeisen{
+padding: 31px 0 29px 14px;
+}
+a.logo.bankmoskva{
+padding: 31px 0 27px 16px;
+}
+a.logo.fts{
+padding: 15px 0 17px 8px;
+}
+a.logo.minfin{
+padding: 18px 0 14px 10px;
+}
+a.logo.svyazbank{
+padding: 25px 0 29px 20px;
+}
+a.logo.vbank{
+padding: 36px 0 0 90px;
+}
+a.logo.belgazprombank{
+padding: 37px 0 0 19px;
+}
+a.logo.mz_kaz{
+padding: 32px 0 0 19px;
+}
+a.logo.azskmg{
+padding: 30px 0 0 19px;
+}
+a.logo.homecredit{
+padding: 30px 0 0 19px;
+}

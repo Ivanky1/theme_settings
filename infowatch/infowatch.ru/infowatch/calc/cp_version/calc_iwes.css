@@ -1,0 +1,290 @@
+#bl_calc {
+width:604px;
+color: #ffffff;
+font: 100% Arial,sans-serif;
+}
+#bl_calc *{
+font: 100% Arial,sans-serif;
+}
+#bl_calc input{
+margin: 2px 0;
+padding: 4px;
+}
+#bl_calc h3 {
+	font-size: 140%;line-height: 130%;
+	}
+#bl_calc .more {
+	position: relative;
+	display: none;
+	padding: 20px;
+	border: 1px solid #e6e6e6;
+	font-size: 13px;
+}
+#bl_calc .more.active {
+	display: block;
+}
+#bl_calc .error {border: 1px solid red;}
+#bl_calc .ppls4_it {display: none;position: absolute;
+padding: 134px 5px 0px 44px;
+background-color: rgb(255, 255, 255);
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #fce0b1;
+left: 2px;
+top: 36px;
+z-index: 99;width: 80px;
+height: 166px;}
+#bl_calc .itogo {display: none; padding-top: 55px;}
+#bl_calc .result td, #bl_calc .result th {
+	padding: 10px; 
+	color:#000;
+}
+#bl_calc .result td.title  {
+	text-align: right; 
+}
+#bl_calc .result th {
+	background: #e6e6e6;
+	text-align: left;
+	font-weight: bold;
+	}
+#bl_calc .result td.itog {
+	font-weight: bold;
+	background: #e6e6e6;
+	text-align: right;	
+}
+#bl_calc #itogo_body td {
+border-collapse: collapse;
+border: 1px solid #e6e6e6;
+background: #ffffff;
+}
+#bl_calc .link_razdel {
+	background:#f7b23d;
+	border-bottom: 1px solid #fff;
+	padding:0;
+	}
+#bl_calc .link_razdel:hover {
+	background:#f36523;
+	}
+#bl_calc .link_razdel.active{
+	background:#f36523;
+	}
+#bl_calc .link_razdel.noact{
+	background:#9c9da1;
+	}	
+#bl_calc .link_razdel .title_raz {
+	padding:20px 24px 5px 100px;
+	cursor: pointer;
+	color:#ffffff;
+}
+#bl_calc .link_razdel .title_raz p,
+#bl_calc .link_razdel .title_raz h3 {
+	color:#ffffff;
+}
+#bl_calc .link_razdel h3 {
+	padding: 0;
+	margin: 0;
+	}
+#bl_calc .title_raz.bs {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/bg_bs.png") 28px 25px no-repeat transparent;
+	}
+#bl_calc .title_raz.ts {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/bg_ts.png") 28px 25px no-repeat transparent;
+	}
+#bl_calc .title_raz.mod {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/bg_mod.png") 28px 25px no-repeat transparent;
+	}
+#bl_calc .link_razdel.active .more{
+	background:#f7b23d;
+	}
+#bl_calc #ppls1, #ppls2, #ppls_all, #bl_calc .modul_box { width: 40px;}
+#bl_calc .modul_box {float: none;margin-top: 0px;margin-left: 33px;}
+#bl_calc .ppls_any {overflow: hidden;padding: 20px 0;} 
+#bl_calc .ppls_any>div {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/inp_off.jpg") 15px 12px no-repeat #f7b23d;
+	border:1px solid #FFF;
+	padding: 4px 15px 4px 40px;line-height: 27px;
+	cursor: pointer;
+}
+#bl_calc .ppls_any>div.inp_on {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/inp_on.jpg") 15px 12px no-repeat #ffffff;
+	color:#000;
+}
+#bl_calc a.raschet{
+	font-size: 14px;
+	font-family: Arial,sans-serif;
+	width: 96px;
+	color: #fff;
+	background: url("http://www.infowatch.ru/sites/default/files/main_slider/link_arrow_ban.png") no-repeat right top  #f36523;
+	line-height: 40px;
+	display: block;
+	height: 38px;
+	padding: 0px 40px 0px 17px;
+	margin-bottom: 2px;	
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+#bl_calc .name_modul {
+	cursor: pointer;
+	padding: 5px 5px 5px 32px;
+	line-height: 48px;
+}
+#bl_calc .checked .name_modul {
+	font-weight: bold;
+}
+#bl_calc a.help {
+	margin-left: 6px;
+	text-decoration: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/help.png") no-repeat left top transparent;
+}
+#bl_calc #moduls_bl li a.help {
+	background-position: left -24px;
+	vertical-align: middle;
+	margin-top: -4px;
+	text-decoration: none;
+}
+#bl_calc a:hover.help {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/help.png") no-repeat left -12px transparent;	
+	text-decoration: none;
+	}
+#bl_calc #moduls_bl li a:hover.help {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/help.png") no-repeat left -12px transparent;	
+	text-decoration: none;
+}
+#bl_calc a.warr {
+	margin-left: 6px;
+	text-decoration: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left top transparent;line-height: 16px;
+}
+.warr.txt {
+	margin-right: 6px;
+	text-decoration: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left top transparent;line-height: 16px;
+}
+#bl_calc a:hover.warr {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left -12px transparent;	
+	text-decoration: none;
+}
+#bl_calc .moduls_ul {
+	margin-left: 0;position: relative;padding-left: 0;
+}
+#bl_calc .moduls_ul li{
+	list-style-type: none;
+	font-size: 13px;
+	color:#3a3a3a;
+	display: inline-block;
+	margin-right: 25px;
+	}
+#bl_calc .help_block {
+	position: relative;
+	font-size: 13px;
+	color: #f36523;
+	display: none;
+}
+#bl_calc .cbox.active {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10%;
+	width: 287px;
+	padding: 35px 15px 15px 15px;
+	background-color: #fff;
+	border: 2px solid #FF6515;line-height: 120%;
+	cursor: pointer;
+	color: #3a3a3a;
+}
+#bl_calc .cbox.active span {
+	color:#f36523;
+}
+#bl_calc a.close, #bl_calc a:hover.close {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/close_btn.png") no-repeat;
+	position: absolute;
+	top: 13px;
+	display: block;
+	right: 13px;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#bl_calc #moduls_bl li {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 7px 18px no-repeat transparent;
+	padding: 0;line-height: 48px;
+	border-bottom: 1px solid #fce0b1;
+	list-style-type: none;	
+	list-style-image: none;
+	height: 48px;
+	display: list-item;
+	margin: 0;
+}
+#bl_calc #moduls_bl li:last-child {
+	border-bottom: none;
+}
+#bl_calc #moduls_bl li.checked {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg") 7px 18px no-repeat transparent;
+}
+#bl_calc .right_td {
+	display: inline-block;
+	float: right;
+	width: 302px;
+	border-left: 1px solid #fce0b1;
+	margin-top: 0px;
+	opacity: 0;
+	height: 38px;
+	padding-top: 10px;
+	}
+#bl_calc #ppls4 {
+	float: left;
+	font-size: 12px;
+	color: #f36523;
+	border-bottom: 1px solid #f7b23d;
+	cursor: pointer;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 95px 12px no-repeat transparent;	position: relative;
+}
+#bl_calc #ppls4.check {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg")  95px 12px no-repeat transparent;
+	position: relative;
+}
+#bl_calc .ppls4_no {
+	padding: 10px 44px 10px 30px;
+	display: inline-block;
+}
+#bl_calc #helpblock_users {
+	left: auto;
+	right: 10%;
+}
+#bl_calc .module_box_123 {
+	clear:both; 
+	overflow:hidden;
+	padding:10px;
+	background-color: #FFF;
+	color:#000;
+	margin-top: -1px;
+	z-index: 88;
+	//padding:10px 9px;
+}
+#bl_calc .select_all {
+	float: left;
+	width: 174px;
+	border-bottom: 1px solid #f7b23d;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 10px 10px 10px 30px;
+	cursor: pointer;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 7px 12px no-repeat transparent;
+}
+#bl_calc .select_all.check {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg") 7px 12px no-repeat transparent;
+}

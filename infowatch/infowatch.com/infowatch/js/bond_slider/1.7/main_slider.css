@@ -1,0 +1,219 @@
+#slidebox {
+	position:relative;
+	border: none;
+	width:980px;
+	height:320px;
+	overflow:hidden;
+	margin:15px 0px 18px;
+	z-index: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25);
+}
+.ie #slidebox{
+	border: 1px solid #e0e0e0;
+	width: 978px;
+}
+.ie9 #slidebox{
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+}
+#slidebox,
+#slidebox .content{
+	width:980px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+#slidebox, #slidebox .container,
+#slidebox .content{
+	height:320px;
+}
+#slidebox .container {
+	position:relative;
+	left:0;
+}
+#slidebox .content{
+	float:left;
+}
+#slidebox .content .ban_item {
+	padding: 40px 0 0 86px;
+	height: 280px;
+	width: 894px;
+}
+#slidebox .next,
+#slidebox .previous {
+	position:absolute;
+	z-index:2;
+	display:block;
+	background: url("/sites/all/themes/infowatch/js/bond_slider/1.7/images/prev_next_arrows_ban.png") no-repeat left top;
+	width:60px;
+	height:60px;
+	top: 130px;
+	transition: background-color 0.15s ease-out 0s;
+    -moz-transition: background-color 0.15s ease-out 0s;
+    -o-transition: background-color 0.15s ease-out 0s;
+    -webkit-transition: background-color 0.15s ease-out 0s;
+}
+.ie #slidebox .next,
+.ie #slidebox .previous{
+	background-color: #222;
+}
+.ie #slidebox .next:hover,
+.ie #slidebox .previous:hover{
+	background-color: #fcfcfc;
+}
+#slidebox .next{
+	right:0;
+	margin-right:0px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#slidebox .next:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-position: -60px 0;
+}
+#slidebox .previous{
+	margin-left: 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-position: -120px 0;
+}
+#slidebox .previous:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-position: -180px 0;
+}
+#slidebox .thumbs{
+	position:absolute;
+	display: block;
+	z-index:2;
+	top: 16px;
+	right: 24px;
+	width: auto;
+	height: 16px;
+}
+#slidebox .thumbs .thumb{
+	outline: none;
+	display:block;
+	margin-left: 10px;
+	float:left;
+	width: 14px;
+	height: 14px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #000;
+	text-decoration:none;
+	line-height: 14px;
+}
+.ie #slidebox .thumbs .thumb{
+	background-color: #222;
+}
+#slidebox .thumbs .thumb:hover {
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #000;
+	line-height: 14px;
+	text-decoration: none;
+}
+.ie #slidebox .thumbs .thumb:hover {
+	background-color: #fcfcfc;
+}
+#slidebox .thumbs .thumb.selected_thumb{
+	outline: none;
+	width: 14px;
+	height: 14px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #000;
+	display:block;
+	margin-left: 12px;
+	float:left;
+	line-height: 14px;
+	text-decoration: none;
+}
+.ie #slidebox .thumbs .thumb.selected_thumb{
+	background-color: #fcfcfc;
+}
+
+#slidebox .content .ban_title {
+	font: normal normal normal 38px/46px PFDinDisplayPro;
+	font-family: PFDinDisplayPro, DINPro, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.6);
+	margin-bottom: 12px;
+}
+.ie #slidebox .content .ban_title {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+}
+#slidebox .content #TM_ban .ban_title {
+	color: #434448;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+.ie #slidebox .content #TM_ban .ban_title {
+	color: #333333;
+}
+#slidebox .content #EgoS_ban .ban_title {
+	text-shadow: 0 -1px 2px rgba(0, 98, 39, 1);
+}
+#slidebox .content #EgoS_ban .ban_subtitle {
+	color: #222;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+#slidebox .content .ban_subtitle {
+	font: normal normal normal 24px/28px DINPro;
+	font-family: DINPro, Arial, sans-serif;
+	color: #fff;
+	margin-bottom: 28px;
+}
+#slidebox .content .ban_link {
+	clear: both;
+}
+#slidebox .content .ban_link a {
+	display: block;
+	height: 38px;
+	font: normal normal normal 18px/38px DINPro;
+	font-family: DINPro, Arial, sans-serif;
+	margin-bottom: 2px;
+	color: #fff;
+	padding: 0px 40px 0px 12px;
+	background:url("/sites/default/files/main_slider/link_arrow_ban.png") no-repeat right top;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: background-color 0.2s ease-out 0s;
+    -moz-transition: background-color 0.2s ease-out 0s;
+    -o-transition: background-color 0.2s ease-out 0s;
+    -webkit-transition: background-color 0.2s ease-out 0s;
+	float: left;
+}
+.ie #slidebox .content .ban_link a {
+	background-color: #222222;
+	line-height: 36px;
+}
+
+#slidebox .content .ban_link a:hover{
+	background-position: right center;
+	text-decoration: none;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.ie #slidebox .content .ban_link a:hover {
+	background-color: #fcfcfc;
+}
+#slidebox .content .ban_link.download_report a{
+	background-color: #f1ad42;
+	color: #000;
+	background-position: right center;}
+#slidebox .content .ban_link.download_report a:hover{
+	background-color: #fff;
+	color: #222;
+}
+#slidebox .content .ban_link.section_analytics a{
+	background-color: transparent;
+	color: #f1ad42;
+	background-position: right bottom;
+}
+#slidebox .content .ban_link.section_analytics a:hover{
+	background-color: rgba(98, 166, 226, 0.8);
+	color: #000;
+	background-position: right center;
+}
+

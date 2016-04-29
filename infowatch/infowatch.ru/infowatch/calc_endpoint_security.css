@@ -1,0 +1,652 @@
+body.printSelected {
+	z-index: -99;
+	margin-left: -999999px;
+}
+body.printSelected .printSelection {
+	z-index: 99;
+	margin-left: 0;
+}
+#bl_calc {
+padding: 0;
+color: #ffffff;
+font: 100% Arial,sans-serif;
+}
+#bl_calc *{
+font: 100% Arial,sans-serif;
+}
+#bl_calc input{
+margin: 8px 0;
+padding: 4px;
+}
+#bl_calc h1 {
+	font-size: 140%;line-height: 130%;
+	}
+#bl_calc .more {
+	position: relative;
+	display: none;
+	padding: 20px 80px 20px 24px;
+	font-size: 13px;
+}
+#bl_calc .more.active {
+	display: block;
+	background: #3b78c0;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNTM3N2JjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSIjNTM3N2JjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZmOTNkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  #3b78c0 0%, #3b78c0 60%, #4e88d0 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3b78c0), color-stop(60%,#3b78c0), color-stop(100%,#4e88d0));
+	background: -webkit-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: -o-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: -ms-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: linear-gradient(135deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b78c0', endColorstr='#4e88d0',GradientType=1 );
+}
+#bl_calc .error {border: 1px solid red;}
+#bl_calc .ppls4_it {display: none;position: absolute;
+padding: 134px 5px 0px 44px;
+background-color: rgb(255, 255, 255);
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #fce0b1;
+left: 2px;
+top: 36px;
+z-index: 99;width: 80px;
+height: 166px;}
+
+#bl_calc .itogo {
+	position: relative;
+	display: none;
+	padding: 0;
+	font-size: 13px
+}
+#bl_calc .itogo.active {
+	display: block;
+	z-index: 1;
+}
+#bl_calc .result td, #bl_calc .result th {
+	padding: 10px; 
+	color:#000;
+}
+#bl_calc .result td.title  {
+	text-align: right; 
+}
+#bl_calc .result th {
+	background: #e6e6e6;
+	text-align: left;
+	font-weight: bold;
+	}
+#bl_calc .result td.itog {
+	font-weight: bold;
+	background: #e6e6e6;
+	text-align: right;	
+}
+#bl_calc #itogo_body td {
+border-collapse: collapse;
+border: 1px solid #e6e6e6;
+background: #ffffff;
+}
+#bl_calc .link_razdel {
+	padding:0;
+	background-color: transparent; 
+	}
+/*#bl_calc .title_raz .for_bg_only {
+	font-size: 22px;
+	font-weight: normal;
+	color: #fff;
+	padding-top: 10px;
+	background-color: transparent;
+	text-transform: none;
+	font-family: DINPro, Arial;
+	width: 375px;
+	background: none no-repeat transparent;
+	}*/
+#bl_calc .title_raz .for_bg_only {
+font-size: 18px;
+font-weight: normal;
+color: #fff;
+background-color: transparent;
+text-transform: none;
+font-family: DINPro,Arial;
+height: 67px;
+background: url("http://www.infowatch.ru/sites/default/files/products/endpoint/bg_mod3.png") 0px 0px no-repeat transparent;
+padding: 16px 24px 0 100px;
+	}
+#bl_calc .link_razdel .title_raz.mod:hover,
+#bl_calc .link_razdel .title_raz.mod.active{
+	background:url("http://www.infowatch.ru/sites/default/files/products/endpoint/bg_mod2_top.png") 36px 0px no-repeat transparent;
+	}	
+#bl_calc .link_razdel .title_raz {
+	/*padding:0 24px 0 100px;*/
+	cursor: pointer;
+	color:#ffffff;
+}
+#bl_calc .link_razdel .title_raz p,
+#bl_calc .link_razdel .title_raz h1,
+#bl_calc .link_razdel .itogo {
+	color:#ffffff;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel h1 {
+	font-size: 22px;
+	font-weight: bold;
+	color:#fff;
+	padding: 0px;
+	background-color: transparent;
+	text-transform: none;
+	font-family: DINPro, Arial;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel h2 {
+	font-size: 18px;
+	font-weight: normal;
+	color:#fff;
+	padding: 0 0 20px 37px;
+	background: url("/sites/default/files/products/endpoint/chemodan_wh.png") 0px 0px no-repeat transparent;
+	text-transform: uppercase;
+	font-family: Arial;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active h2 {
+	background: none transparent;
+	padding-left: 0;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel h3 {
+	font-size: 15px;
+	font-weight: normal;
+	color:#fff;
+	background: url("/sites/default/files/products/endpoint/chemodan_wh.png") 0px 2px no-repeat transparent;
+	text-transform: none;
+	font-family: Arial;
+	padding-left: 37px;	margin-bottom: 20px;line-height: 26px;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .itogo .cbox1 .citats p.h3_citate {
+	font-size: 15px;
+	font-weight: bold;
+	color:#434343;
+	text-transform: uppercase;
+	font-family: Arial;
+	padding-bottom: 20px;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .itogo .cbox1 .citats p.h3_citate span {
+	font-size: 15px;
+	font-weight: normal;
+	color:#434343;
+	text-transform: none;
+	font-family: Arial;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box {
+font-size: 15px;
+font-weight: normal;
+clear: both;
+color: #fff;
+font-family: DINPro;
+display: block;
+height: 50px;
+line-height: 45px;
+border-top: 1px dashed #94abd5;
+margin: 0 0 0 38px;
+position: relative;
+cursor: pointer;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.lamp_ico {
+border-bottom: 1px dashed #94abd5;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.active {
+font-weight: bold;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box span{
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 35px;
+	top: 0px;
+	left: -35px;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.flashka_ico span{
+background:url("/sites/default/files/products/endpoint/flashka_wh.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.man_ico span{
+background:url("/sites/default/files/products/endpoint/man_wh.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.def_ico span{
+background:url("/sites/default/files/products/endpoint/def_wh.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.star_ico span{
+background:url("/sites/default/files/products/endpoint/star_wh.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.lamp_ico span{
+background:url("/sites/default/files/products/endpoint/lamp_wh.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box.flashka_ico span,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.flashka_ico.active span{
+background:url("/sites/default/files/products/endpoint/flashka_wh100.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box.man_ico span,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.man_ico.active span{
+background:url("/sites/default/files/products/endpoint/man_wh100.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box.def_ico span,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.def_ico.active span{
+background:url("/sites/default/files/products/endpoint/def_wh100.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box.star_ico span,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.star_ico.active span{
+background:url("/sites/default/files/products/endpoint/star_wh100.png") 0px bottom no-repeat transparent;
+}
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p:hover.why_box.lamp_ico span,
+#wrapper #container #center #squeeze #bl_calc .link_razdel .more.active p.why_box.lamp_ico.active span{
+background:url("/sites/default/files/products/endpoint/lamp_wh100.png") 0px bottom no-repeat transparent;
+}
+#bl_calc .link_razdel .itogo .cbox1 .citats {
+margin: auto -20px;
+padding: 20px 24px;
+background-color: #ffffff;
+position: relative;
+}
+#bl_calc .link_razdel .itogo .cbox1 .citats>span {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	top: -10px;
+	left: 20px;
+	background:url("/sites/default/files/products/endpoint/arr_top_more.png") 0px 0px no-repeat transparent;
+}
+#bl_calc .link_razdel .itogo .cbox1 p {
+	color: #3a3a3a;
+position: relative;
+padding-right: 50px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+#bl_calc .link_razdel .itogo .cbox p {
+	color: #3a3a3a;
+position: relative;
+padding-right: 50px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+#bl_calc .link_razdel .itogo p.moduls_this {
+	color: #3a3a3a;
+position: relative;
+padding-right: 50px;
+padding-bottom: 0;
+margin-bottom: 24px;
+}
+#bl_calc .link_razdel .itogo .cbox1.active p:last-child,
+#bl_calc .link_razdel .itogo .cbox1.active p.active:last-child,
+#bl_calc .link_razdel .itogo .cbox1.active p:last-child.active,
+#bl_calc .link_razdel .itogo .cbox1.active p.active.last,
+#bl_calc .link_razdel .itogo p.moduls_this:last-child,
+#bl_calc .link_razdel .itogo p.moduls_this.active:last-child,
+#bl_calc .link_razdel .itogo p.moduls_this:last-child.active,
+#bl_calc .link_razdel .itogo p.moduls_this.active.last {
+border-bottom: none;
+margin: 0;
+padding-bottom: 0px;
+}
+#bl_calc .link_razdel .itogo strong {
+	font-size: 16px;
+font-weight: bold;
+clear: both;
+color: #3a3a3a;
+}
+#bl_calc .link_razdel h1 {
+	padding: 0;
+	margin: 0;
+	}
+#bl_calc .title_raz.mod {
+	background: url("http://www.infowatch.ru/sites/default/files/products/endpoint/bg_mod_top.png") 36px 0px no-repeat transparent;
+	padding: 0;
+	padding-top: 45px;
+	}
+#body_calc .title_raz.active {
+	border-bottom: 1px solid #fff;
+	}
+#bl_calc .link_razdel.active .more,
+#bl_calc .link_razdel.active .itogo{
+	background:#ffaa1f;
+	}
+#bl_calc #ppls1, #ppls2, #ppls_all, #bl_calc .modul_box { width: 40px;}
+#bl_calc .modul_box {float: none;margin-top: 0px;margin-left: 33px;}
+#bl_calc .ppls_any {overflow: hidden;padding: 20px 0;} 
+#bl_calc .ppls_any>div {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/inp_off.jpg") 15px 12px no-repeat #ffaa1f;
+	border:1px solid #FFF;
+	padding: 4px 15px 4px 40px;line-height: 27px;
+	cursor: pointer;
+}
+#bl_calc .ppls_any>div.inp_on {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/inp_on.jpg") 15px 12px no-repeat #ffffff;
+	color:#000;
+}
+body.page-node-2649 #squeeze #bl_calc a.raschet{
+	position: relative;
+	font-size: 16px;
+	font-family: Arial,sans-serif;
+	color: #2e477e;
+	background: url("/sites/default/files/products/endpoint/bg_baton.png") repeat-x right top transparent;
+	line-height: 45px;
+	display: inline-block;
+	height: 45px;
+	padding: 0px 20px 0px 48px;
+	text-decoration: none;
+}
+body.page-node-2649 #squeeze #bl_calc a.raschet span.right_btn{
+	background: url("/sites/default/files/products/endpoint/img_baton.png") no-repeat 0 0 transparent;
+	height: 17px;
+	width: 23px;
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+body.page-node-2649 #squeeze #bl_calc a.raschet2{
+	font-size: 14px;
+	font-family: Arial,sans-serif;
+	width: 96px;
+	color: #fff;
+	background: url("http://www.infowatch.ru/sites/default/files/main_slider/link_arrow_ban.png") no-repeat right top #3b78c0;
+	line-height: 40px;
+	display: block;
+	height: 38px;
+	padding: 0px 40px 0px 17px;
+	margin-bottom: 2px;	
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+body.page-node-2649 #squeeze #bl_calc a.raschet3{
+position: relative;
+font-size: 16px;
+font-family: Arial,sans-serif;
+color: #2e477e;
+background: url("/sites/default/files/products/endpoint/bg_baton.png") repeat-x right top transparent;
+line-height: 45px;
+display: inline-block;
+height: 45px;
+padding: 0px 30px 0px 65px;
+text-decoration: none;
+}
+body.page-node-2649 #squeeze #bl_calc a.raschet3 span.left_btn{
+background: url("/sites/default/files/products/endpoint/buttons_icons_mon.png") no-repeat center center transparent;
+height: 15px;
+width: 19px;
+position: absolute;
+top: 15px;
+left: 25px;
+}
+#bl_calc .name_modul {
+	cursor: pointer;
+	padding: 10px 35px 10px 45px;
+	display: block;
+}
+/*#bl_calc .checked .name_modul {
+	font-weight: bold;
+}*/
+body.page-node-2649 #squeeze #bl_calc a.help {
+	margin-left: 6px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/help.png") no-repeat left top transparent;
+	background-position: left -24px;
+	vertical-align: middle;
+	text-decoration: none;
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	display: none;
+}
+body.page-node-2649 #squeeze #bl_calc .cbox1 a.help {
+	right: 24px;
+}
+body.page-node-2649 #squeeze #bl_calc a:hover.help {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/help.png") no-repeat left -12px transparent;	
+	text-decoration: none;
+	}
+body.page-node-2649 #squeeze #bl_calc .moduls_ul .last a.help {
+	top: 7px;
+	}
+#bl_calc a.warr {
+	margin-left: 6px;
+	text-decoration: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left top transparent;line-height: 16px;
+}
+.warr.txt {
+	margin-right: 6px;
+	text-decoration: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left top transparent;line-height: 16px;
+}
+#bl_calc a:hover.warr {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/war.png") no-repeat left -12px transparent;	
+	text-decoration: none;
+}
+#bl_calc .help_block {
+	position: relative;
+	font-size: 13px;
+	color: #f36523;
+	display: none;
+}
+#bl_calc .cbox.active {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 30%;
+	width: 287px;
+	padding: 35px 15px 15px 15px;
+	background-color: #fff;
+	border: 2px solid #2e477e;line-height: 120%;
+	cursor: pointer;
+	color: #3a3a3a;
+	z-index: 2;
+}
+#bl_calc .cbox.active span {
+	color:#f36523;
+}
+.itogo .cbox1 {
+	padding: 4px 20px 24px;
+	margin: auto -20px;
+	/*background-color: #ffffff;*/
+	position: relative;
+}
+#bl_calc .link_razdel.itogo .cbox1 p.active{
+	width: 590px;
+	position: relative;
+}
+#bl_calc a.close, #bl_calc a:hover.close {
+	background: url("/sites/default/files/products/endpoint/close_btn2.png") no-repeat;
+	position: absolute;
+	top: 13px;
+	display: block;
+	right: 13px;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#bl_calc .moduls_ul li {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 7px 14px no-repeat transparent;
+	padding: 0;
+	/*border-right: 1px solid #fce0b1;*/
+	list-style-type: none;	
+	list-style-image: none;
+	display: block;
+	margin: 0 15px 0 0;
+	/*float: left;
+	width: 320px;*/
+	position: relative;
+}
+#bl_calc .moduls_ul li:last-child {
+	border-right: none;
+	margin-right: 0;
+}
+#bl_calc .moduls_ul li.last {
+	border-right: none;
+	margin-right: 0;	
+	width: 620px;
+	background-position: 7px 12px;
+}
+#bl_calc .moduls_ul li.checked {	
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg") 7px 12px no-repeat transparent;
+}
+#bl_calc .right_td {
+	display: none;
+	float: right;
+	width: 302px;
+	border-left: 1px solid #fce0b1;
+	margin-top: 0px;
+	opacity: 0;
+	height: 38px;
+	padding-top: 10px;
+	}
+#bl_calc #ppls4 {
+	float: left;
+	font-size: 12px;
+	color: #f36523;
+	border-bottom: 1px solid #ffaa1f;
+	cursor: pointer;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 95px 12px no-repeat transparent;	position: relative;
+}
+#bl_calc #ppls4.check {
+	background:url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg")  95px 12px no-repeat transparent;
+	position: relative;
+}
+#bl_calc .ppls4_no {
+	padding: 10px 44px 10px 30px;
+	display: inline-block;
+}
+#bl_calc #helpblock_users {
+	left: auto;
+	right: 10%;
+}
+#bl_calc .module_box_123 {
+	clear: both;
+	padding: 10px;
+	color: #000;
+	margin: -1px -80px -1px -20px;
+	z-index: 88;
+	//padding:10px 9px;
+	background-color: #ffffff;
+	position: relative;
+	border-top: 1px solid #ffffff;
+}
+#bl_calc .module_box_123>span {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	top: -10px;
+	left: 10px;
+	background:url("/sites/default/files/products/endpoint/arr_top_more.png") 0px 0px no-repeat transparent;
+}
+#bl_calc .select_all {
+	float: left;
+	width: 174px;
+	border-bottom: 1px solid #ffaa1f;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 10px 10px 10px 30px;
+	cursor: pointer;
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_off.jpg") 7px 12px no-repeat transparent;
+}
+#bl_calc .select_all.check {
+	background: url("http://www.infowatch.ru/sites/all/themes/infowatch/calc/default/check_on.jpg") 7px 12px no-repeat transparent;
+}
+#Itogo {
+	padding: 20px;
+	display: none;
+	background: #3b78c0;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNTM3N2JjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSIjNTM3N2JjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZmOTNkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  #3b78c0 0%, #3b78c0 60%, #4e88d0 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3b78c0), color-stop(60%,#3b78c0), color-stop(100%,#4e88d0));
+	background: -webkit-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: -o-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: -ms-linear-gradient(-45deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	background: linear-gradient(135deg,  #3b78c0 0%,#3b78c0 60%,#4e88d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b78c0', endColorstr='#4e88d0',GradientType=1 );
+}
+#Itogo p.btn_holder {
+	padding: 0;
+width: auto;
+position: relative;overflow: visible;
+}
+body.page-node-2649 #squeeze .btn_holder a.link_me {
+margin-right: 15px;
+display: inline-block;
+padding: 0 10px 0 30px;
+background:url("/sites/default/files/products/endpoint/buttons_icons_png.png") 0px 0px no-repeat transparent;
+line-height: 25px;
+}
+body.page-node-2649 #squeeze .btn_holder a#again {	
+	background:url("/sites/default/files/products/endpoint/play_back.png") 0px 0px no-repeat transparent;
+}
+body.page-node-2649 #squeeze .btn_holder a#printit {	
+	background-position: 0px -20px;
+}
+body.page-node-2649 #squeeze .btn_holder a#for_email {	
+	background-position: 0px -44px;
+}
+body.page-node-2649 #squeeze .btn_holder a#ask_me {	
+	background-position: 0px -68px;
+}
+body.page-node-2649 #squeeze .btn_holder a.link_me span {
+	font-size: 14px;
+color: #fff;
+font-weight: normal;
+text-decoration: underline;
+}
+body.page-node-2649 #squeeze .btn_holder a:hover.link_me span {
+text-decoration: none;
+} 
+#bl_calc #mail_for.cbox.active {
+	top: -80px;
+left: 26%;
+padding: 15px;
+}
+#Itogo .cbox.active span.help_me,
+#Itogo .cbox.active span.help_me1,
+#Itogo .cbox.active span.help_mee,
+#Itogo .cbox.active span.help_me2,
+#Itogo .cbox.active span.help_me3 {
+	padding: 0 0 5px;
+}
+#bl_calc .cbox.active span.help_me {
+	color: #222;
+	font-weight: bold;
+	display: none;
+}
+#bl_calc .cbox.active span.help_mee {
+	color: #ff0000;
+	font-weight: bold;
+	display: none;
+}
+#bl_calc .cbox.active span.help_me3
+ {
+	display: none;
+	color: red;
+	font-weight: bold;
+}
+#bl_calc .cbox.active span.help_me3,
+#bl_calc .cbox.active span.help_me1
+ {
+	display: none;
+	color: red;
+	font-weight: bold;
+}
+#bl_calc .cbox.active span.help_me2 {
+	display: none;
+	color: green;
+	font-weight: bold;
+}
+#bl_calc .cbox.active span.help_me.active,
+#bl_calc .cbox.active span.help_me1.active,
+#bl_calc .cbox.active span.help_mee.active,
+#bl_calc .cbox.active span.help_me2.active,
+#bl_calc .cbox.active span.help_me3.active {
+	display: block;
+}

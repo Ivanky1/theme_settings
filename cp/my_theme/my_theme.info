@@ -1,0 +1,24 @@
+name = my_theme
+description = A multi-column theme which can be configured to modify colors and switch between fixed and fluid width layouts.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+stylesheets[all][] = content.css
+
+
+; Information added by Drupal.org packaging script on 2014-04-16
+version = "7.27"
+project = "drupal"
+datestamp = "1397687057"
+
+
+regions[header] = Header
+regions[header_block] = Header Block
+regions[sidebar_left] = Left sidebar
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[help] = Help
+regions[footer] = Footer
+regions[popup] = Popup

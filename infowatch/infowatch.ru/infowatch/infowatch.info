@@ -1,0 +1,29 @@
+; $Id: infowatch.info,v 1.10 2010/11/07 00:27:20 dries Exp $
+name = Infowatch
+description = A multi-column theme which can be configured to modify colors and switch between fixed and fluid width layouts.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = style_new.css
+stylesheets[all][] = operative.css
+stylesheets[all][] = content.css
+stylesheets[print][] = print.css
+settings[garland_width] = fluid
+
+; Information added by drupal.org packaging script on 2011-06-30
+version = "7.4"
+project = "drupal"
+datestamp = "1309397516" 
+
+regions[header] = Header
+regions[header_block] = Header Block
+regions[highlighted] = Highlighted
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[top_content] = Top Content
+regions[social] =  Social
+regions[bottom_content] = Bottom Content
+regions[rss_blocks] = RSS Block
+regions[help] = Help
+regions[footer] = Footer

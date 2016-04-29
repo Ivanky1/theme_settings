@@ -1,0 +1,73 @@
+/************** Skin 1 *********************/
+.dd {
+	/*display:inline-block !important;*/
+	text-align:left;
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	position: relative;
+}
+.dd .ddTitle {
+	background:#ffffff;
+	border:1px solid #cccccc;
+	padding: 6px 2px 6px 7px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height: 15px;
+	color: #666666;
+}
+
+.dd .ddTitle span.arrow {
+	background:url(dd_arrow.png) no-repeat 0 0; float:right; display:inline-block;width: 18px; height: 15px; cursor:pointer; 
+}
+
+.dd .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:15px;}
+.dd .ddTitle span.ddTitleText img{text-align:left; padding: 0 2px 3px 0;}
+.dd .ddTitle img.selected {
+	padding: 0 2px 3px 0;
+	vertical-align:top;
+}
+.dd .ddChild {
+	padding: 8px 0;
+	position:absolute;
+	border:1px solid #cccccc;
+	border-top:none;
+	display:none;
+	margin:0;
+	width:auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#ffffff;
+	top: 26px;
+}
+
+.dd .ddChild .opta a, .dd .ddChild .opta a:visited {padding-left:10px}
+.dd .ddChild a {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	padding: 6px 2px 6px 7px;
+	margin: 1px 0;
+}
+.dd .ddChild a.comboBoxFooter_msa_0{
+border-top: 1px solid #d4d4d4;
+}
+.dd .ddChild a:hover {
+	background-color:#eeeeee;
+}
+.dd .ddChild a img {
+	border:0;
+	padding: 0 2px 3px 0;
+}
+
+.dd .ddChild a.selected {
+	background-color:#eeeeee;
+	
+}
+.hidden {display:none;}
+

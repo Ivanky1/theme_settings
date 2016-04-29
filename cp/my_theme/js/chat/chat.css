@@ -1,0 +1,38 @@
+/*.iwc_input {
+    width: 300px;
+}
+
+.iwc_label {
+    width: 250px;
+    vertical-align: top;
+    padding-top: 0.3em;
+}
+
+.iwc_error {
+    background-color: #E3726A;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.required {
+    font-weight: bold;
+    color: red;
+    margin-left: 0.2em;
+} */
+
+/*
+#prechat_form tbody td {
+    padding: 5px 5px;
+}
+#prechat_form tr td.iwc_label{
+    padding: 7px 0 0 5px;
+}
+#prechat_form tr:nth-child(odd) {
+    background: #f1f9f1;
+}
+
+
+*/
+
